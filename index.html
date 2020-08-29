@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora de bases numericas</title>
+
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+	
+</head>
+<body id="page-bases-numericas">
+	<div id="container">
+		<header class="page-header">
+			<strong>Calculadora de bases numericas</strong>
+
+        </header>
+		<main>
+			<div class="input-block">
+				<label for="binaria">Base binaria (2)</label>
+				<input name="binaria" id="binaria" type="text" onblur="fromBinaria()" onkeypress="validandoBinaria()">
+			</div>
+			
+			<div class="input-block">
+				<label for="octal">Base octal (8)</label>
+				<input name="octal" id="octal" type="text" onblur="fromOctal()" onkeypress="validandoOctal()">
+			</div>
+			<div class="input-block">
+				<label for="decimal">Base decimal (10)</label>
+				<input name="decimal" id="decimal" type="text"  onblur="fromDecimal()" onkeypress="validandoDecimal()">
+			</div>
+            <div class="input-block">
+				<label for="hexadecimal">Base hexadecimal (16)</label>
+				<input name="hexadecimal" id="hexadecimal" type="text"  onblur="fromHexadecimal()" onkeypress="validandoHexadecimal()">
+            </div>
+            <div>
+                <p></p>
+            </div>
+	
+			<button id="limpar" onclick="limpar()">Limpar campos</button>
+	
+		</main>
+		<footer>
+            <label>Desenvolvido por Scharles Souza. Todos os Direitos Reservados.</label>
+		</footer>
+	</div>
+    <script src="script/conversorBase.js"></script>
+</body>
+</html>
